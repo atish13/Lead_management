@@ -42,7 +42,7 @@
         </a>
         <a href="{{url('/Form/edit/')}}/{{$data->id}}">
         <button class="btn btn-success">Edit</button>
-
+        
     </td>
     </tr>
         @endforeach

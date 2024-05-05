@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('lead_assign', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('table_leads_id')->constrained()->onDelete('cascade');
+            $table->foreignId('lead_id')->constrained()->onDelete('cascade');
             $table->string('status');
             $table->foreignId('user_id')->constrained();
             $table->timestamps();

@@ -65,6 +65,7 @@ class AdminController extends Controller
         {
             return redirect()->back();
         }
+        
         // $title="Form Edit";
         // $url=url('/userAdd')."/".$id;
         // $data=compact("url","user");

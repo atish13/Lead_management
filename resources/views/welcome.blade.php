@@ -81,7 +81,7 @@
 
         <div class="content">
             <div class="title m-b-md">
-                Welcome to {{ config('app.name', 'Laravel') }}
+                Lead Management System 
             </div>
 
             <div class="links">
