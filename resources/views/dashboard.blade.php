@@ -40,8 +40,10 @@
         <h3>
         <a href="{{route('view.leads')}}" class="text-blue">All Leads</a>
         </h3>
+        
         <h3><a href="{{route('user.index')}}" class="text-blue">View User</a></h3>
-        <h3><a href="{{route('leadassign.show')}}" class="text-blue">Lead Assign</a></h3>
+        <h3><a href="{{route('leadassign.show')}}" class="text-blue">Edit Lead Assign</a></h3>
+        <h3><a href="{{route('leadassign.info')}}" class="text-blue">View Lead Assign</a></h3>
         <!-- <h3>All Leads</h3> -->
 
         </div>
@@ -60,11 +62,15 @@
         <a href="{{route('view.leads')}}" class="text-blue">All Leads</a>
         </h3>
         <h3>
-            <a href="{{url('/mylead/show/')}}/{{auth()->user()->id}}" class="text-blue">My Leads</a>
+            <a href="{{url('/mylead/show/')}}/{{auth()->user()->id}}" class="text-blue">Edit Leads</a>
         </h3>
         <h3>
+            <a href="{{route('mylead.info',$id)}}" class="text-blue">My Leads</a>
+        <h3>
+        <h3>
             <a href="{{route('mylead.followup',$id)}}" class="text-blue">Followup Table</a>
-        <h3
+        <h3>
+       
                 @endif
     </x-slot>
 
