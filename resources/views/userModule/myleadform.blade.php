@@ -30,7 +30,7 @@
         </div>
         <div class="mt-4">
             <x-input-label for="user id" :value="__('user id')" />
-            <x-text-input style="pading:4px" id="user id" class="block mt-1 w-full" type="user id" name="user_id" :value="old('user id')" required autocomplete="username" />
+            <x-text-input style="pading:4px" id="user id" class="block mt-1 w-full" type="user id" name="user_id" :value="$lead->user_id" required autocomplete="username" />
             <x-input-error :messages="$errors->get('user id')" class="mt-2" />
         </div>
 

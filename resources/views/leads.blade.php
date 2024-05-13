@@ -15,9 +15,14 @@
         </div>
         <div class="d-flex justify-content-end mt-3">
         
-
+        
          <a href="{{route('register')}}">
         <button class=" btn btn-success">Home</button></a>
+        @if(auth()->user()->hasRole('Admin'))
+
+         <a href="{{route('lead.form')}}">
+        <button class=" btn btn-success">add leads</button></a>
+        @endif
 </div>
 
         <table class="table">

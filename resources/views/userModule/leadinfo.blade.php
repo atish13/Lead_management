@@ -10,7 +10,7 @@
 <body>
         <div class="container">
            <div class="bg-primary-subtle p-4 d-flex justify-content-center">
-                <h2>My Leads</h2>
+                <h2>MyLeads Info</h2>
             </div>
             <div class="d-flex justify-content-end mt-3">
             <div>
@@ -25,25 +25,21 @@
                     <th>lead id</th>
                     <th>status</th>
                     <th>user id</th>
-                    <!-- <th>title</th>
+                    <th>title</th>
                     <th>contact</th>
-                    <th>email</th> -->
-                    <th>Action</th>
+                    <th>email</th>
                 </thead>
                 <tbody>
-            @foreach($leadassign as $data)
+            @foreach($leadinfo as $data)
         <tr>
             <!-- <td>{{$data->id}}</td> -->
             <td>{{$data->lead_id}}</td>
             <td>{{$data->status}}</td>
             <td>{{$data->user_id}}</td>
-            <!-- <td>{{$data->title}}</td>
+            <td>{{$data->title}}</td>
             <td>{{$data->email}}</td>
-            <td>{{$data->contact}}</td> -->
-            <td>
-            <a href="{{url('/mylead/edit/')}}/{{$data->id}}">
-        <button class="btn btn-success">Edit</button>
-            </td>
+            <td>{{$data->contact}}</td>
+        
         </tr>
         @endforeach
                 </tbody>

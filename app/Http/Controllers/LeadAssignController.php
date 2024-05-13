@@ -21,6 +21,19 @@ class LeadAssignController extends Controller
         return view('leadAssign.leadAssign')->with($data);
 
     }
+    public function allleadinfo()
+    {
+         $leadinfo =LeadAssign::leftJoin('table_leads', 'lead_assign.lead_id', '=', 'table_leads.id')
+      ->select('lead_assign.*', 'table_leads.*')
+      ->union(
+          LeadAssign::rightJoin('table_leads', 'lead_assign.lead_id', '=', 'table_leads.id')
+              ->select('lead_assign.*', 'table_leads.*')
+      )
+      ->get();
+      $data=compact('leadinfo');
+      return view('adminView.allleadinfo')->with($data);
+
+    }
     public function store(Request $request)
         {
             $leadstore=new LeadAssign;
