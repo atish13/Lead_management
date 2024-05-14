@@ -20,6 +20,7 @@
             <!-- Static options -->
             <option value="pending"> pending</option>
             <option value="followup">followUp</option>
+            <option value="close">close</option>
             
             
         </select>

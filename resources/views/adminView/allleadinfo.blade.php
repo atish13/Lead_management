@@ -34,7 +34,12 @@
         <tr>
             <!-- <td>{{$data->id}}</td> -->
             <td>{{$data->lead_id}}</td>
-            <td>{{$data->status}}</td>
+           
+            <td>
+                 <button class="btn btn-warning">
+                {{$data->status}}
+            </button>
+            </td>
             <td>{{$data->user_id}}</td>
             <td>{{$data->title}}</td>
             <td>{{$data->email}}</td>
