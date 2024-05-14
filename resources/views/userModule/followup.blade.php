@@ -29,7 +29,11 @@
             @foreach($lead as $data)
         <tr>
             <td>{{$data->lead_id}}</td>
-            <td>{{$data->status}}</td>
+            <td>
+                 <button class="btn btn-warning">
+                {{$data->status}}
+            </button>
+            </td>
             <td>{{$data->user_id}}</td>
             
         </tr>
