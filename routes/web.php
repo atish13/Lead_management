@@ -10,10 +10,6 @@ use App\Http\controllers\MyLeadController;
 use App\Models\{User,Role,permission,Leads,LeadAssign};
 
 
-
-
-
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -83,8 +79,6 @@ Route::middleware('auth')->group(function () {
     Route::get("/userAdd/{id}",[AdminController::class,"edit"])->name('user.edit');
     Route::post("/userAdd/{id}",[AdminController::class,"update"])->name('user.update');
     
-
-
 
     // Route::get('/userAdd', [AdminController::class, 'create']);
 
