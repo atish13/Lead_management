@@ -41,9 +41,9 @@
         <td>{{$data->password}}</td>
         <td>
         <td><a href="{{url('/user/delete/')}}/{{$data->id}}">
-        <button class="btn btn-danger">Delete</button>
+        <button class="btn btn-danger btn-sm">Delete</button>
         <td><a href="{{url('/userAdd/')}}/{{$data->id}}">
-        <button class="btn btn-warning">Edit</button>
+        <button class="btn btn-warning btn-sm">Edit</button>
         
     </tr>
     @endforeach
